@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+5.times do
+ Note.create(
+   title: Faker::Hipster.sentence(4),
+   body: Faker::Hipster.paragraph(5)
+ )
+end
+puts "seeded"
